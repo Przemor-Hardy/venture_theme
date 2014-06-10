@@ -146,44 +146,44 @@ hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; margin: 
 
 /* Main Navigation
 ================================================== */
-.sf-menu,
-.sf-menu * { margin: 0; padding: 0; list-style: none; }
-.sf-menu li { position: relative }
-.sf-menu ul { position: absolute; display: none; top: 100%; left: 0; z-index: 10001; }
-.sf-menu > li { float: left }
-.sf-menu li:hover > ul,
-.sf-menu li.sfHover > ul { display: block }
-.sf-menu a { display: block; position: relative; }
-.sf-menu ul ul { top: 0; left: 100%; }
-.sf-menu { float: left }
-.sf-menu ul { min-width: 160px; *width: 160px; }
-.sf-menu a { zoom: 1 }
-.sf-menu li { position: relative; white-space: nowrap; *white-space: normal; -webkit-transition: background .2s; transition: background .2s; }
-.sf-menu li:hover,
-.sf-menu li.sfHover { -webkit-transition: none; transition: none; }
-.sf-menu .sf-mega { position: absolute; display: none; top: 100%; left: 0; z-index: 99; }
-.sf-menu li:hover > .sf-mega,
-.sf-menu li.sfHover > .sf-mega { display: block }
+#main-menu > ul,
+#main-menu > ul * { margin: 0; padding: 0; list-style: none; }
+#main-menu > ul li { position: relative }
+#main-menu > ul ul { position: absolute; display: none; top: 100%; left: 0; z-index: 10001; }
+#main-menu > ul > li { float: left }
+#main-menu > ul li:hover > ul,
+#main-menu > ul li.sfHover > ul { display: block }
+#main-menu > ul a { display: block; position: relative; }
+#main-menu > ul ul ul { top: 0; left: 100%; }
+#main-menu > ul { float: left }
+#main-menu > ul ul { min-width: 160px; *width: 160px; }
+#main-menu > ul a { zoom: 1 }
+#main-menu > ul li { position: relative; white-space: nowrap; *white-space: normal; -webkit-transition: background .2s; transition: background .2s; }
+#main-menu > ul li:hover,
+#main-menu > ul li.sfHover { -webkit-transition: none; transition: none; }
+#main-menu > ul .sf-mega { position: absolute; display: none; top: 100%; left: 0; z-index: 99; }
+#main-menu > ul li:hover > .sf-mega,
+#main-menu > ul li.sfHover > .sf-mega { display: block }
 /*styling*/
 #site-navigation-wrap { position: absolute; right: 0; top: 50%; height: 40px; margin-top: -20px; }
-#site-navigation .dropdown-menu li { display: block; float: left; height: 40px; line-height: 40px;}
-#site-navigation .dropdown-menu > li { margin-left: 25px; }
-#site-navigation .dropdown-menu > li:first-child { margin-left:0; }
-#site-navigation .dropdown-menu a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; }
-#site-navigation .dropdown-menu > li > a:hover,
-#site-navigation .dropdown-menu > li.sfHover > a,
-#site-navigation .dropdown-menu > li > a.active,
-#site-navigation .dropdown-menu > li > a.active:hover { color: #000; }
+#site-navigation #main-menu > ul li { display: block; float: left; height: 40px; line-height: 40px;}
+#site-navigation #main-menu > ul > li { margin-left: 25px; }
+#site-navigation #main-menu > ul > li:first-child { margin-left:0; }
+#site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; }
+#site-navigation #main-menu > ul > li > a:hover,
+#site-navigation #main-menu > ul > li.sfHover > a,
+#site-navigation #main-menu > ul > li > a.active,
+#site-navigation #main-menu > ul > li > a.active:hover { color: #000; }
 /*drop-down styles*/
-#site-navigation .dropdown-menu ul { background: #222; font-size: 1em; }
-#site-navigation .dropdown-menu ul li a { display: block; height: auto; line-height: 1.7em; padding: 10px; margin: 0px; border: 0px; text-transform: none; }
-#site-navigation .dropdown-menu ul li a.sf-with-ul { padding-right: 23px; }
-#site-navigation .dropdown-menu ul li { border-bottom: 1px solid rgba(255, 255, 255, 0.08); line-height: 1.4em; height: auto; float: none; display: block; }
-#site-navigation .dropdown-menu ul li > a:hover { color: #fff }
-#site-navigation .dropdown-menu ul li:last-child { border: none; }
+#site-navigation #main-menu > ul ul { background: #222; font-size: 1em; }
+#site-navigation #main-menu > ul ul li a { display: block; height: auto; line-height: 1.7em; padding: 10px; margin: 0px; border: 0px; text-transform: none; }
+#site-navigation #main-menu > ul ul li a.sf-with-ul { padding-right: 23px; }
+#site-navigation #main-menu > ul ul li { border-bottom: 1px solid rgba(255, 255, 255, 0.08); line-height: 1.4em; height: auto; float: none; display: block; }
+#site-navigation #main-menu > ul ul li > a:hover { color: #fff }
+#site-navigation #main-menu > ul ul li:last-child { border: none; }
 /*arrows*/
-#site-navigation  .dropdown-menu > li .fa-angle-down { margin-left: 5px }
-#site-navigation  .dropdown-menu > li ul li .fa-angle-right { position: absolute; top: 50%; right: 15px; height: 20px; line-height: 20px; margin-top: -10px; }
+#site-navigation #main-menu > ul > li .fa-angle-down { margin-left: 5px }
+#site-navigation #main-menu > ul > li ul li .fa-angle-right { position: absolute; top: 50%; right: 15px; height: 20px; line-height: 20px; margin-top: -10px; }
 
 /*hide responsive elements
 ================================================== */
@@ -192,12 +192,7 @@ hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; margin: 
 /* Sidebar
 ================================================== */
 .sidebar-container .block { margin-bottom: 30px; }
-.sidebar-container a { color: #777; }
 .sidebar-container .block > h2 { font-size: 1.5em;  margin: 0 0 10px; }
-.sidebar-container a:hover { color: #54d5a2; text-decoration: none; }
-/* Widgets
-================================================== */
-.sidebar-container select { width: 100%; }
 /* FlexSlider
 ================================================== */
 /* Necessary Styles*/
@@ -288,11 +283,7 @@ h1.page-title {
 
 /* Preface
 ================================================== */
-#preface-wrap { padding: 50px 0 0; }
-#preface-wrap input[type="text"],
-#preface-wrap input[type="search"] { border:  none; }
-#preface-wrap select { width: 100%; }
-#preface-wrap a:hover { text-decoration: none; }
+#preface-wrap { padding: 40px 0 0; }
 #preface-wrap .block { margin-bottom: 20px }
 #preface-wrap .span_1_of_3.col-1 { padding-right: 10px; }
 #preface-wrap .span_1_of_3.col-2 { padding-left: 5px; padding-right: 5px; }
@@ -303,7 +294,6 @@ h1.page-title {
 #footer-wrap { background: #222; padding: 50px 0 0; }
 #footer-wrap input[type="text"],
 #footer-wrap input[type="search"] { border:  none; }
-#footer-wrap select { width: 100%; }
 #footer-wrap a { color: #bbb; }
 #footer-wrap a:hover { color: #54d5a2; text-decoration: none; }
 #footer-wrap .block > h2 { color:  #fff; font-size: 1.25em; margin: 0 0 15px; }

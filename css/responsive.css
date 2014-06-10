@@ -22,7 +22,7 @@
 ================================================== */
 @media only screen and (max-width: 959px) {
 	a#navigation-toggle { display: block; }
-	#site-navigation .sf-menu{ display: none; }
+	#site-navigation #main-menu > ul{ display: none; }
 }
 /* Tablet (Portrait)
 ================================================== */

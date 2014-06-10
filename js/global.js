@@ -3,7 +3,6 @@ jQuery( function($) {
 	$(document).ready(function(){
 		
 		// Main menu superfish
-		$('#main-menu > ul').addClass('dropdown-menu sf-menu');
 		$('#main-menu > ul').superfish({
 			delay: 200,
 			animation: {opacity:'show', height:'show'},
