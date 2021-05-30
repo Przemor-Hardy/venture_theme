@@ -17,7 +17,7 @@
 	#sidr-main ul li ul li li li a { padding-left: 30px; }
 	#sidr-main ul li ul li a:before { content: '\f0da'; display: inline-block; -webkit-font-smoothing: antialiased; font-family: 'FontAwesome'; color: #888; margin-right: 10px; }
 	.sidr-class-toggle-sidr-close:before { position: absolute; top:30px; left: 30px; content: '\f00d'; font-family: 'FontAwesome'; color: #fff; margin: 0; }
-	
+
 /* Smaller Then Desktop
 ================================================== */
 @media only screen and (max-width: 959px) {
@@ -46,4 +46,16 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.sidr { width: 480px; }
 	.sidr.right { right: -480px; }
+}
+
+/* Mobile (Table)
+================================================== */
+table {
+	display: block;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
