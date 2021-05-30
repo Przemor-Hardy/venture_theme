@@ -1,6 +1,6 @@
 /* MObile Menu
 ================================================== */
-	a#navigation-toggle { height: 55px; line-height: 55px; margin: 0; float: left; cursor: pointer; color: #888; padding-left: 35px; font-weight: 600; position: relative; z-index: 9; text-decoration: none !important; font-size: 1.1em; }
+	a#navigation-toggle { height: 55px; line-height: 55px; margin: 0; float: left; cursor: pointer; color: #888; padding-left: 0px; font-weight: 600; position: relative; z-index: 9; text-decoration: none !important; font-size: 1.1em; }
 	a#navigation-toggle .fa { margin-right: 10px; }
 	#navigation-toggle { color: #8b8b8b; }
 	#navigation-toggle:hover { color: #000; }
@@ -23,6 +23,7 @@
 @media only screen and (max-width: 959px) {
 	a#navigation-toggle { display: block; }
 	#site-navigation #main-menu > ul{ display: none; }
+	#site-navigation-wrap { margin-top: -15px; }
 }
 /* Tablet (Portrait)
 ================================================== */

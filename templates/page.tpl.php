@@ -90,6 +90,11 @@
           </div>
         </nav>
       </div>
+      <?php if ($page['header']): ?>
+      <div class="span_1_of_1 col col-1">
+        <?php print render($page['header']); ?>
+      </div>
+    <?php endif; ?>
     </header>
   </div>
 
@@ -152,7 +157,7 @@
   <?php endif; ?>
 
 
-  <?php if ($page['preface_first'] || $page['preface_middle'] || $page['preface_last']  || $page['header']): ?>
+  <?php if ($page['preface_first'] || $page['preface_middle'] || $page['preface_last']): ?>
   <div id="preface-wrap" class="site-preface clr">
     <div id="preface" class="clr container">
       <?php if ($page['preface_first'] || $page['preface_middle'] || $page['preface_last']): ?>
@@ -166,11 +171,6 @@
           <?php if($page['preface_last']): ?><div class="span_1_of_3 col col-3 preface-block ">
             <?php print render ($page['preface_last']); ?>
           </div><?php endif; ?>
-        </div>
-      <?php endif; ?>
-      <?php if ($page['header']): ?>
-        <div class="span_1_of_1 col col-1">
-          <?php print render($page['header']); ?>
         </div>
       <?php endif; ?>
     </div>

@@ -165,7 +165,8 @@ hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; margin: 
 #main-menu > ul li:hover > .sf-mega,
 #main-menu > ul li.sfHover > .sf-mega { display: block }
 /*styling*/
-#site-navigation-wrap { position: absolute; right: 0; top: 50%; height: 40px; margin-top: -20px; }
+#logo { float: left; }
+#site-navigation-wrap { margin-top: -5px; float: right; }
 #site-navigation #main-menu > ul li { display: block; float: left; height: 40px; line-height: 40px;}
 #site-navigation #main-menu > ul > li { margin-left: 25px; }
 #site-navigation #main-menu > ul > li:first-child { margin-left:0; }
