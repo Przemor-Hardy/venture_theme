@@ -21,6 +21,16 @@ jQuery( function($) {
 			$.sidr('close', 'sidr-main');
 			return false;
 		});
+
+
+		//Close sidr Navigation When Clicked outside menu contianer
+		$(document).mouseup(function (e){
+		  var container = $("#sidr-main");
+
+		  if (!container.is(e.target) && container.has(e.target).length === 0) {
+		    $.sidr('close', 'sidr-main');
+		  }
+		});
 		
 		// Close the menu on window change
 		$(window).resize(function() {
