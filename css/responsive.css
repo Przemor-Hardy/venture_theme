@@ -60,3 +60,7 @@ table {
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
 }
+
+.views-slideshow-cycle-main-frame {
+  max-width: 100%;
+}
